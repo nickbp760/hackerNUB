@@ -1,4 +1,4 @@
-# for @@@+@@@=@@@@ with 0-9 is different
+# for @@@+@@@=@@@@ with 0-9 is different wk.txt from permutation.py 
 f = open("wk.txt")
 i=0
 for x in f:
