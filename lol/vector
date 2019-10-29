@@ -1,0 +1,35 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n = 4;
+    int m = 5;
+
+    // Create a vector containing n
+    //vectors of size m.
+    vector<vector<int> > vec( n , vector<int> (m));
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++){
+            vec[i][j] = j + i + 1;
+        }
+    }
+    vec[0].push_back(4);
+    vec[2].push_back(4);
+    vec.push_back(vector<int>());
+    vec[4].push_back(1);
+    cout<<vec.size();
+    for (int i = 0; i < n+1; i++) {
+        for (int j = 0; j <1; j++){
+            cout<< vec[i][j]<< " ";
+        }
+        cout<< "\n";
+    }
+    vector< vector<int> > ve;
+
+    for (int i = 0; i < 10; i++) {
+        ve.push_back(vector<int>()); // Add an empty row
+    }
+return 0;
+}
